@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BaseThread.Vues.ThreadVue"
+             Title="ThreadVue">
+    <VerticalStackLayout>
+        <Label x:Name="mesNumeros"
+            Text="{Binding Points}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label x:Name="mesNumeros2"
+            Text="{Binding Points2}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>
+            <Frame>
+                <Button Text="mon Bouton" Clicked="Button_Clicked"></Button></Frame>
+            <Frame>
+                <Label x:Name="leLabel" Text=""></Label>
+            </Frame>
+        </HorizontalStackLayout> 
+    </VerticalStackLayout>
+</ContentPage>
